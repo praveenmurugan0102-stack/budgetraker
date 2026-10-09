@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SSC CGL Tier 1 full mock test</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafaf8;--card:#fff;--ink:#1c2230;--mute:#6b7280;--line:#e4e4df;--acc:#1f4fd8;--accbg:#e8eefc;--ok:#18794e;--okbg:#e5f4ec;--bad:#b42318;--badbg:#fdeceb;--mk:#6d3fc0;--mkbg:#efe7fb;--onacc:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171d;--card:#1c2029;--ink:#eceef2;--mute:#9aa3b2;--line:#2c313c;--acc:#7aa2ff;--accbg:#23304f;--ok:#5fd09a;--okbg:#173024;--bad:#ff8c82;--badbg:#3a1f1e;--mk:#b79bff;--mkbg:#2b2442;--onacc:#0b1020}}
+:root[data-theme="dark"]{--bg:#14171d;--card:#1c2029;--ink:#eceef2;--mute:#9aa3b2;--line:#2c313c;--acc:#7aa2ff;--accbg:#23304f;--ok:#5fd09a;--okbg:#173024;--bad:#ff8c82;--badbg:#3a1f1e;--mk:#b79bff;--mkbg:#2b2442;--onacc:#0b1020}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1000px;margin:0 auto;padding:20px 18px 64px}
+h1{font-size:28px;line-height:1.2;margin:0 0 8px}h2{font-size:20px;margin:24px 0 8px}
+p{margin:0 0 12px;max-width:64ch}.mute{color:var(--mute)}.hide{display:none}
+button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 14px}
+button:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+button:disabled{opacity:.5;cursor:not-allowed}
+.primary{background:var(--acc);border-color:var(--acc);color:var(--onacc);font-weight:600}
+table{width:100%;border-collapse:collapse;margin:12px 0 20px}td,th{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}
+.rules{padding-left:20px;max-width:64ch}.rules li{margin-bottom:6px}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.timer{font-variant-numeric:tabular-nums;font-weight:700;font-size:24px}.timer.low{color:var(--bad)}
+.grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:820px){.grid{grid-template-columns:1fr 270px}}
+.tabs{display:flex;gap:4px;overflow-x:auto;border-bottom:1px solid var(--line);margin-bottom:18px}
+.tab{border:0;border-bottom:3px solid transparent;border-radius:0;background:none;white-space:nowrap;color:var(--mute);padding:9px 12px}
+.tab[aria-selected="true"]{border-color:var(--acc);color:var(--ink);font-weight:600}
+.qmeta{display:flex;justify-content:space-between;color:var(--mute);margin-bottom:8px}
+.q{font-size:21px;line-height:1.45;margin:0 0 16px}
+.opt{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);margin-bottom:8px;cursor:pointer}
+.opt input{margin-top:6px;accent-color:var(--acc)}.opt.sel{border-color:var(--acc);background:var(--accbg)}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.pal{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:10px 0 14px}
+.pal button{padding:0;height:42px}
+.pal .ans{background:var(--okbg);border-color:var(--ok)}.pal .na{background:var(--badbg);border-color:var(--bad)}
+.pal .mk{background:var(--mkbg);border-color:var(--mk)}.pal .ans2{box-shadow:inset 0 -5px 0 var(--ok)}
+.pal .here{outline:2px solid var(--ink);outline-offset:1px}
+.leg{font-size:15px;color:var(--mute);display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;margin-bottom:16px}
+.score{font-size:64px;font-weight:700;line-height:1;margin:12px 0 4px}
+details{border-top:1px solid var(--line);padding:10px 0}summary{cursor:pointer;font-weight:600}
+.rv{padding:10px 0;border-top:1px solid var(--line)}.rv p{margin-bottom:4px}
+.good{color:var(--ok)}.badc{color:var(--bad)}
+</style>
+</head>
+<body>
+<main>
+
+<section id="intro">
+  <h1>SSC CGL Tier 1 full mock test</h1>
+  <p class="mute">The same structure as the real paper: 100 questions, 200 marks, 60 minutes. Questions are generated fresh each attempt, so you can retake it.</p>
+  <table>
+    <thead><tr><th>Section</th><th>Questions</th><th>Marks</th></tr></thead>
+    <tbody>
+      <tr><td>General Intelligence and Reasoning</td><td>25</td><td>50</td></tr>
+      <tr><td>General Awareness</td><td>25</td><td>50</td></tr>
+      <tr><td>Quantitative Aptitude</td><td>25</td><td>50</td></tr>
+      <tr><td>English Comprehension</td><td>25</td><td>50</td></tr>
+    </tbody>
+  </table>
+  <h2>Instructions</h2>
+  <ul class="rules">
+    <li>Total time is 60 minutes for all four sections together. The test submits itself when time runs out.</li>
+    <li>Each right answer gives +2 marks. Each wrong answer costs 0.5 marks. Unanswered questions score zero.</li>
+    <li>Move between sections and questions in any order using the tabs and the palette.</li>
+    <li>Use Mark for Review on questions you want to revisit. A marked question that has an answer still counts when you submit.</li>
+    <li>Palette colours: green is answered, red is seen but not answered, purple is marked for review, grey is not visited.</li>
+  </ul>
+  <p><label><input type="checkbox" id="agree"> I have read the instructions</label></p>
+  <button class="primary" id="start" disabled>Begin test</button>
+</section>
+
+<section id="test" class="hide">
+  <div class="head"><b>SSC CGL Tier 1 mock</b><span class="timer" id="timer" role="timer">60:00</span></div>
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="grid">
+    <div>
+      <div class="qmeta"><span id="qno"></span><span>+2 for right, −0.5 for wrong</span></div>
+      <p class="q" id="q"></p>
+      <div id="opts"></div>
+      <div class="acts">
+        <button class="primary" id="save">Save and next</button>
+        <button id="mark">Mark for review and next</button>
+        <button id="clear">Clear response</button>
+      </div>
+    </div>
+    <aside>
+      <div class="pal" id="pal" aria-label="Question palette"></div>
+      <div class="leg" id="leg"></div>
+      <button class="primary" id="submit" style="width:100%">Submit test</button>
+    </aside>
+  </div>
+</section>
+
+<section id="result" class="hide"></section>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const R=(a,b)=>a+Math.floor(Math.random()*(b-a+1)),P=a=>a[R(0,a.length-1)];
+const sh=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=R(0,i);[a[i],a[j]]=[a[j],a[i]]}return a};
+// question = [text, options, correctIndex, explanation]
+function mk(q,ans,e,f=x=>x,step){
+  step=step||Math.max(1,Math.round(ans/15));
+  const s=new Set([ans]);let g=0;
+  while(s.size<4&&g++<80){const v=ans+R(1,4)*step*(R(0,1)?1:-1);if(v>0)s.add(v)}
+  const o=sh([...s]);return [q,o.map(f),o.indexOf(ans),e];
+}
+function pq(t,i,f,g){
+  const [k,a]=t[i],o=sh([a,...sh(t.filter((_,j)=>j!==i).map(x=>x[1])).slice(0,3)]);
+  return [f(k),o,o.indexOf(a),g(k,a)];
+}
+const many=(arr,n)=>Array.from({length:n},(_,i)=>arr[i%arr.length]());
+
+// Reasoning
+const RG=[
+()=>{const a=R(2,20),d=R(2,9),l=[0,1,2,3,4].map(i=>a+i*d);return mk(`Find the next number: ${l.join(", ")}, ?`,a+5*d,`The common difference is ${d}.`)},
+()=>{const a=R(1,4),r=P([2,3]),l=[0,1,2,3,4].map(i=>a*r**i);return mk(`Find the next number: ${l.join(", ")}, ?`,a*r**5,`Each term is multiplied by ${r}.`)},
+()=>{const a=R(1,10),d=R(1,4);let l=[a],x=d;for(let i=0;i<4;i++){l.push(l[i]+x);x+=2}return mk(`Find the next number: ${l.join(", ")}, ?`,l[4]+x,`The gaps grow by 2 each time, so the next gap is ${x}.`)},
+()=>{const k=R(1,3),w=P(["CODE","MAIL","FARM","LAMP","WIND","BOAT"]),w2=P(["TEAM","KING","PORT","DESK","ROAD","HAND"]);
+  const e=(s,n)=>[...s].map(c=>String.fromCharCode((c.charCodeAt(0)-65+n+26)%26+65)).join("");
+  const ans=e(w2,k),s=new Set([ans]);[-1,1,2,3,-2].forEach(n=>{if(s.size<4&&n!==k)s.add(e(w2,n))});
+  const o=sh([...s]);return [`If ${w} is coded as ${e(w,k)}, how is ${w2} coded?`,o,o.indexOf(ans),`Every letter moves ${k} step${k>1?"s":""} forward in the alphabet.`]},
+()=>{const ns=sh([4,5,6,7,8,9,10,11,12,13,14]).slice(0,4),v=ns.map(n=>n*n),o=R(0,3);v[o]+=R(1,3);
+  return [`Find the odd one out: ${v.join(", ")}`,v.map(String),o,`The others are perfect squares. ${v[o]} is not.`]}
+];
+// Quantitative Aptitude
+const QG=[
+()=>{const p=P([10,15,20,25,30,40]),n=R(5,45)*20;return mk(`What is ${p}% of ${n}?`,p*n/100,`${p}% of ${n} = ${p*n/100}.`)},
+()=>{const a=R(20,60),l=[a-6,a-2,a,a+3,a+5];return mk(`Find the average of ${l.join(", ")}.`,a,`The sum is ${a*5}, and ${a*5} / 5 = ${a}.`)},
+()=>{const c=R(2,10)*100,p=P([10,20,25,30,40]),s=c*(100+p)/100;return mk(`An article bought for ₹${c} is sold for ₹${s}. What is the profit percentage?`,p,`Profit = ₹${s-c}, and ${s-c} / ${c} × 100 = ${p}%.`,x=>x+"%",5)},
+()=>{const p=R(2,10)*1000,r=P([5,6,8,10]),t=R(2,5),a=p*r*t/100;return mk(`What is the simple interest on ₹${p} at ${r}% per annum for ${t} years?`,a,`SI = ${p} × ${r} × ${t} / 100 = ₹${a}.`,x=>"₹"+x,100)},
+()=>{const v=R(2,8)*18,t=P([5,6,10]),L=v*5/18*t;return mk(`A train ${L} m long crosses a pole in ${t} seconds. What is its speed in km/h?`,v,`${L} / ${t} = ${L/t} m/s, and ${L/t} × 3.6 = ${v} km/h.`,x=>x+" km/h",6)},
+()=>{const [a,b,r]=P([[12,24,8],[10,15,6],[20,30,12],[15,30,10],[6,12,4],[18,9,6],[20,5,4],[30,60,20]]);return mk(`A can finish a job in ${a} days and B in ${b} days. Working together, how many days will they take?`,r,`Together they finish ${a+b}/${a*b} of the job per day, so ${r} days.`,x=>x+" days",1)},
+()=>{const [a,b]=P([[2,3],[3,5],[4,5],[1,3]]),k=R(2,20)*10,N=(a+b)*k,m=Math.max(a,b)*k;return mk(`₹${N} is divided in the ratio ${a}:${b}. What is the larger share?`,m,`One part = ${N} / ${a+b} = ${k}, so the larger share is ${m}.`,x=>"₹"+x,10)},
+()=>{const b=R(3,15)*2,h=R(4,20);return mk(`Find the area of a triangle with base ${b} cm and height ${h} cm.`,b*h/2,`Area = ½ × ${b} × ${h} = ${b*h/2}.`,x=>x+" cm²",2)}
+];
+// English
+const SY=[["abundant","plentiful"],["brief","short"],["candid","frank"],["diligent","hardworking"],["eloquent","fluent"],["frugal","thrifty"],["gloomy","dismal"],["hostile","unfriendly"],["obstinate","stubborn"],["tranquil","calm"]];
+const AN=[["ancient","modern"],["generous","stingy"],["victory","defeat"],["expand","contract"],["transparent","opaque"],["arrogant","humble"],["scarce","abundant"],["rigid","flexible"]];
+const OW=[["a person who can speak two languages","bilingual"],["one who loves books","bibliophile"],["fear of heights","acrophobia"],["government by the people","democracy"],["one who eats no meat","vegetarian"],["a place where birds are kept","aviary"],["that which cannot be read","illegible"]];
+const EN=[
+...SY.map((_,i)=>pq(SY,i,w=>`Choose the synonym of ${w.toUpperCase()}.`,(k,a)=>`"${k}" means "${a}".`)),
+...AN.map((_,i)=>pq(AN,i,w=>`Choose the antonym of ${w.toUpperCase()}.`,(k,a)=>`The opposite of "${k}" is "${a}".`)),
+...OW.map((_,i)=>pq(OW,i,w=>`Choose one word for: ${w}.`,(k,a)=>`"${a}" means ${k}.`))
+];
+// General Awareness
+const CAP=[["Karnataka","Bengaluru"],["Tamil Nadu","Chennai"],["Rajasthan","Jaipur"],["Odisha","Bhubaneswar"],["Kerala","Thiruvananthapuram"],["Assam","Dispur"]];
+const BK=[["Gitanjali","Rabindranath Tagore"],["The Discovery of India","Jawaharlal Nehru"],["Arthashastra","Kautilya"],["Wings of Fire","A. P. J. Abdul Kalam"],["Godan","Premchand"]];
+const SYM=[["sodium","Na"],["potassium","K"],["iron","Fe"],["silver","Ag"],["gold","Au"]];
+const ART=[["Article 21","Protection of life and personal liberty"],["Article 17","Abolition of untouchability"],["Article 14","Equality before law"],["Article 32","Right to constitutional remedies"]];
+const YR=[["the Battle of Plassey","1757"],["the First Battle of Panipat","1526"],["the Jallianwala Bagh massacre","1919"],["the Quit India Movement","1942"],["India's independence","1947"]];
+const GA=[
+...CAP.map((_,i)=>pq(CAP,i,k=>`What is the capital of ${k}?`,(k,a)=>`${a} is the capital of ${k}.`)),
+...BK.map((_,i)=>pq(BK,i,k=>`Who wrote "${k}"?`,(k,a)=>`${a} wrote ${k}.`)),
+...SYM.map((_,i)=>pq(SYM,i,k=>`What is the chemical symbol of ${k}?`,(k,a)=>`The symbol for ${k} is ${a}.`)),
+...ART.map((_,i)=>pq(ART,i,k=>`${k} of the Indian Constitution deals with:`,(k,a)=>`${k} deals with: ${a}.`)),
+...YR.map((_,i)=>pq(YR,i,k=>`In which year did ${k} take place?`,(k,a)=>`${k} took place in ${a}.`))
+];
+
+let S,A,M,V,sec=0,idx=0,left=3600,tick=null,over=false,armed=false;
+$("agree").onchange=e=>$("start").disabled=!e.target.checked;
+function show(id){["intro","test","result"].forEach(x=>$(x).classList.toggle("hide",x!==id))}
+const fmt=t=>String(Math.floor(t/60)).padStart(2,"0")+":"+String(t%60).padStart(2,"0");
+$("start").onclick=()=>{
+  S=[{n:"Reasoning",q:sh(many(RG,25))},{n:"General Awareness",q:sh(GA)},{n:"Quantitative Aptitude",q:sh(many(QG,25))},{n:"English",q:sh(EN)}];
+  A=S.map(()=>Array(25).fill(null));M=S.map(()=>Array(25).fill(false));V=S.map(()=>Array(25).fill(false));
+  show("test");render();
+  tick=setInterval(()=>{left--;$("timer").textContent=fmt(Math.max(left,0));$("timer").classList.toggle("low",left<=300);if(left<=0)finish()},1000);
+};
+function render(){
+  const q=S[sec].q[idx];V[sec][idx]=true;
+  $("tabs").innerHTML=S.map((x,i)=>`<button class="tab" role="tab" aria-selected="${i===sec}" data-s="${i}">${x.n}</button>`).join("");
+  $("tabs").querySelectorAll("button").forEach(b=>b.onclick=()=>{sec=+b.dataset.s;idx=0;render()});
+  $("qno").textContent=`${S[sec].n}, question ${idx+1} of 25`;
+  $("q").textContent=q[0];
+  $("opts").innerHTML="";
+  q[1].forEach((t,j)=>{
+    const l=document.createElement("label");l.className="opt"+(A[sec][idx]===j?" sel":"");
+    l.innerHTML=`<input type="radio" name="o"${A[sec][idx]===j?" checked":""}><span></span>`;
+    l.querySelector("span").textContent=t;
+    l.querySelector("input").onchange=()=>{A[sec][idx]=j;render()};
+    $("opts").appendChild(l);
+  });
+  let c={ans:0,na:0,mk:0,nv:0};
+  $("pal").innerHTML="";
+  for(let i=0;i<25;i++){
+    const a=A[sec][i]!==null,m=M[sec][i],v=V[sec][i];
+    if(m)c.mk++;else if(a)c.ans++;else if(v)c.na++;
+    if(!v)c.nv++;
+    const b=document.createElement("button");b.textContent=i+1;b.setAttribute("aria-label",`Question ${i+1}`);
+    b.className=(m?"mk":a?"ans":v?"na":"")+(m&&a?" ans2":"")+(i===idx?" here":"");
+    b.onclick=()=>{idx=i;render()};$("pal").appendChild(b);
+  }
+  $("leg").innerHTML=`<span>Answered: ${c.ans}</span><span>Not answered: ${c.na}</span><span>Marked: ${c.mk}</span><span>Not visited: ${c.nv}</span>`;
+}
+function advance(){if(idx<24)idx++;else if(sec<3){sec++;idx=0}render()}
+$("save").onclick=()=>{M[sec][idx]=false;advance()};
+$("mark").onclick=()=>{M[sec][idx]=true;advance()};
+$("clear").onclick=()=>{A[sec][idx]=null;render()};
+$("submit").onclick=()=>{
+  if(armed)return finish();
+  const n=A.flat().filter(x=>x===null).length;
+  armed=true;$("submit").textContent=`${n} unanswered. Tap again to submit`;
+  setTimeout(()=>{armed=false;$("submit").textContent="Submit test"},4000);
+};
+function finish(){
+  if(over)return;over=true;clearInterval(tick);
+  let tot=0,C=0,W=0,rows="",rev="";
+  S.forEach((s,si)=>{
+    let c=0,w=0,u=0,items="";
+    s.q.forEach((q,i)=>{
+      const a=A[si][i];
+      if(a===null)u++;else if(a===q[2])c++;else w++;
+      const st=a===null?"Skipped":a===q[2]?`<span class="good">Correct</span>`:`<span class="badc">Wrong</span>`;
+      items+=`<div class="rv"><p><b>${i+1}.</b> ${q[0]}</p><p>${st}. Your answer: ${a===null?"none":q[1][a]}. Correct answer: ${q[1][q[2]]}.</p><p class="mute">${q[3]}</p></div>`;
+    });
+    const m=c*2-w*0.5;tot+=m;C+=c;W+=w;
+    rows+=`<tr><td>${s.n}</td><td>${c}</td><td>${w}</td><td>${u}</td><td>${m}</td></tr>`;
+    rev+=`<details><summary>${s.n} answers</summary>${items}</details>`;
+  });
+  const att=C+W,acc=att?Math.round(C/att*100):0;
+  $("result").innerHTML=`<h1>Your result</h1><p class="score">${tot}<span class="mute" style="font-size:28px"> / 200</span></p>
+  <p class="mute">Attempted ${att} of 100. Accuracy ${acc}%. Time used ${fmt(3600-Math.max(left,0))}.</p>
+  <table><thead><tr><th>Section</th><th>Right</th><th>Wrong</th><th>Skipped</th><th>Marks</th></tr></thead><tbody>${rows}</tbody></table>
+  <button class="primary" onclick="location.reload()">Take a new test</button>
+  <h2>Review answers</h2>${rev}`;
+  show("result");window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
